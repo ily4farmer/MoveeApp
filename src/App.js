@@ -1,61 +1,41 @@
 import React, { Component } from 'react';
-import Apply from "./components/Apply";
+import Movies from "./components/Movies/Movies";
+import axios from "axios";
+import "./App.css";
 
 
 export default class App extends Component {
 
-  constructor(props) {
-    super(props)
-    console.log("Конструктор");
-  }
-
   state = {
-    count: 0
+    isLoading: true,
+    movies: []
   }
 
-  plus = () => {
-    let current = this.state.count;
-    current++;
+  getMovies = async () => {
+    const {data: {data: {movies}}} = await axios.get('https://yts.mx/api/v2/list_movies.json');
     this.setState({
-      count: current
-    });
-  }
-
-  minus = () => {
-    let current = this.state.count;
-    current--;
-    if (current <= 0) {
-      current = 0;
-    }
-    this.setState({
-      count: current
-    });
+      movies: movies,
+      isLoading: false
+    })
   }
 
   componentDidMount() {
-    console.log('Компонент был смонтирован');
-  }
-
-  componentDidUpdate() {
-    console.log('Компонент был изменен');
-  }
-
-  componentWillUnmount() {
-    console.log('Компонент был удален');
+    this.getMovies();
   }
 
   render() {
-    console.log("Я рендерюсь");
-    const {count} = this.state;
-    const {plus, minus} = this;
-    return(
-      <div>
-        <h1>Текущее число: {count}</h1>
-        <button onClick={minus}>Минус</button>
-        <button onClick={plus}>Плюс</button>
+    const {isLoading, movies} = this.state;
 
-      </div>
-    )
+    return (
+      <section className="container">
+          {isLoading ? 
+          <div className="loader">
+            <span>Загрузка...</span>
+          </div>
+          : <Movies movies={movies}/>
+          }
+      </section>
+    );
   }
 }
 
