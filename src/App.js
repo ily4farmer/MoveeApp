@@ -33,7 +33,7 @@ export default class App extends Component {
             <span>Загрузка...</span>
           </div>
           : <Movies movies={movies}/>
-          }
+          } 
       </section>
     );
   }

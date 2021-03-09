@@ -1,3 +1,26 @@
+*{
+    box-sizing: border-box;
+}
 body {
-    background: #fffdd6;
+    background: #EFF3F7;
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+html, body, #root, .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
