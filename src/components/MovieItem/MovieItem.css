@@ -1,61 +1,67 @@
 .movie__item {
     margin-top: 100px;
     position: relative;
-    width: 480px;
-    height: 547px;
     background: #FFFFFF;
+    max-width: 480px;
+    height: 400px;
     box-shadow: 1px 2px 6px 7px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
 
+.movie__img {
+    margin-left: 10px;
+    float: right;
+    margin-top: 18px;
+    margin-right: 18px;
+    width: 174px;
+    height: 243px;
+    box-shadow: 1px 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+
+.movie__column{
+    margin-left: 16px;
+}
+
 .movie__title {
     display: flex;
+    align-content: center;
     align-items: center;
-    /* text-align: center; */
-    width: 260px;
-    height: 200px;
-    margin-left: 210px;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 27px;
+    height: 138px;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 34px;
+    
+    margin-bottom: 15px;
 }
 
 .movie__year {
-    margin-top: -15px;
-    margin-left: 210px;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 24px;
     margin-bottom: 0;
 }
 
 .movie__genres {
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* justify-content: space-ev; */
-    width: 240px;
-    height: 70px;
-    margin-left: 210px;
-}
-.movie__genres-item {
-    font-weight: normal;
-    font-size: 16px;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    margin-left: 0;
+    
+
 }
 
-.movie__img {
-    width: 271px;
-    height: 391px;
-    position: absolute;
-    top: -45px;
-    left: -80px;
+.movie__genres-item:first-child {
+    margin-left: 5px;
+}
+
+.movie__genres-item {
+    display: block;
+    margin-left: 5px;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .movie__summary {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
 }
-
-/* .movie__column {
-    width: 280px;
-    height: 130px;
-} */
