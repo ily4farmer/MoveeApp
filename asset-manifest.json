@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/pilot_project/static/css/main.4feca329.chunk.css",
-    "main.js": "/pilot_project/static/js/main.d128cc58.chunk.js",
-    "main.js.map": "/pilot_project/static/js/main.d128cc58.chunk.js.map",
+    "main.css": "/pilot_project/static/css/main.6c73acfb.chunk.css",
+    "main.js": "/pilot_project/static/js/main.65b51a25.chunk.js",
+    "main.js.map": "/pilot_project/static/js/main.65b51a25.chunk.js.map",
     "runtime-main.js": "/pilot_project/static/js/runtime-main.f0e3be9b.js",
     "runtime-main.js.map": "/pilot_project/static/js/runtime-main.f0e3be9b.js.map",
     "static/js/2.a8942b0b.chunk.js": "/pilot_project/static/js/2.a8942b0b.chunk.js",
     "static/js/2.a8942b0b.chunk.js.map": "/pilot_project/static/js/2.a8942b0b.chunk.js.map",
     "index.html": "/pilot_project/index.html",
-    "static/css/main.4feca329.chunk.css.map": "/pilot_project/static/css/main.4feca329.chunk.css.map",
+    "static/css/main.6c73acfb.chunk.css.map": "/pilot_project/static/css/main.6c73acfb.chunk.css.map",
     "static/js/2.a8942b0b.chunk.js.LICENSE.txt": "/pilot_project/static/js/2.a8942b0b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f0e3be9b.js",
     "static/js/2.a8942b0b.chunk.js",
-    "static/css/main.4feca329.chunk.css",
-    "static/js/main.d128cc58.chunk.js"
+    "static/css/main.6c73acfb.chunk.css",
+    "static/js/main.65b51a25.chunk.js"
   ]
 }
