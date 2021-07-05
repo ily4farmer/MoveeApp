@@ -1,6 +1,6 @@
 import React from 'react';
 import MovieItem from "../MovieItem/MovieItem";
-import "./Movies.css";
+import "./Movies.sass";
 
 export default function Movies({movies, leng, showItem, display}) {
     console.log(display);

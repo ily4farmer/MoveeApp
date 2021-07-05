@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import "./Navigation.css"
+
+import "./Navigation.sass"
 
 export default function Navigation() {
     return (

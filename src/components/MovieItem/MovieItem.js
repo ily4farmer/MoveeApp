@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import "./MovieItem.css"
+import "./MovieItem.sass"
 
 export default function MovieItem({id, title, genres, year, summary, poster}) {
     const renderIcon = () =>{
